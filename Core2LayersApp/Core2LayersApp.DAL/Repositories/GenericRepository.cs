@@ -3,11 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using Core2LayersApp.DAL.Entities;
 
 namespace Core2LayersApp.DAL.Repositories
 {
     public abstract class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
+       
         protected GenericRepository(DbContext context)
         {
             _context = context;
