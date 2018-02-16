@@ -4,11 +4,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Core2LayersApp.DAL.Entities
 {
-    class Category
+    public class Category
     {
         [Key]
         [ScaffoldColumn(false)]
         public int CategoryId { get; set; }
+
+        [Display(Name = "Name")]
+        [Required(ErrorMessage = "Поле обязательно")]
+        [StringLength(50, ErrorMessage = "Длина не должна превышать 50 символов")]
+        public string Name { get; set; }
 
         [Display(Name = "Category")]
         [Required(ErrorMessage = "Поле обязательно")]

@@ -7,15 +7,16 @@ using Core2LayersApp.DAL.Entities;
 
 namespace Core2LayersApp.DAL.Repositories
 {
-    public abstract class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
-       
-        protected GenericRepository(DbContext context)
+        DbContext _context;
+        DbSet<TEntity> _entities;
+
+        public GenericRepository(DbContext context)
         {
             _context = context;
             _entities = context.Set<TEntity>();
         }
-
         public virtual TEntity Get(int id)
         {
             return _entities.Find(id);
@@ -49,14 +50,14 @@ namespace Core2LayersApp.DAL.Repositories
         public virtual void Add(TEntity entity)
         {
             _entities.Add(entity);
+            _context.SaveChanges();
         }
 
         public virtual void Remove(TEntity entity)
         {
             _entities.Remove(entity);
+            _context.SaveChanges();
         }
-
-        private DbSet<TEntity> _entities;
-        private DbContext _context;
+        
     }
 }

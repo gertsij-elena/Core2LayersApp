@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Core2LayersApp.DAL.Entities
 {
-    class DataContext:DbContext
+    public class DataContext:DbContext
     {
         public DataContext(DbContextOptions<DataContext> options)
            : base(options)

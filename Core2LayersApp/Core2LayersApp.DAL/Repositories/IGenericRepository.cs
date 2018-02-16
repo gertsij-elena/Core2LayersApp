@@ -16,7 +16,8 @@ namespace Core2LayersApp.DAL.Repositories
         int Count();
 
         void Add(TEntity entity);
+
         void Remove(TEntity entity);
     }
 }
-}
+

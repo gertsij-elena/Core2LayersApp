@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core2LayersApp.Web", "Core2LayersApp\Core2LayersApp.Web.csproj", "{4256BF98-5686-4784-A4A9-C4940E515857}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core2LayersApp.Web", "Core2LayersApp\Core2LayersApp.Web.csproj", "{4256BF98-5686-4784-A4A9-C4940E515857}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core2LayersApp.DAL", "Core2LayersApp.DAL\Core2LayersApp.DAL.csproj", "{B881B97E-7D9F-4C7B-BEF7-32E99F589D7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core2LayersApp.DAL", "Core2LayersApp.DAL\Core2LayersApp.DAL.csproj", "{B881B97E-7D9F-4C7B-BEF7-32E99F589D7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core2LayerApp.Services", "ServicesLayer\Core2LayerApp.Services.csproj", "{1919581E-9B47-4C03-BC4B-EBAEBC932FD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core2LayersApp.Services", "ServicesLayer\Core2LayersApp.Services.csproj", "{1919581E-9B47-4C03-BC4B-EBAEBC932FD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

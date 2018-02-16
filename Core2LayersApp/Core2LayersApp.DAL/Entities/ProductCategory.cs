@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Core2LayersApp.DAL.Entities
 {
-    class ProductCategory
+    public class ProductCategory
     {
         public int ProductId { get; set; }
         public Product Product { get; set; }

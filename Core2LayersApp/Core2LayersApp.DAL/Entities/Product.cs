@@ -4,7 +4,7 @@ using System;
 
 namespace Core2LayersApp.DAL.Entities
 {
-    class Product
+    public  class Product
     {
 
         [Key]
@@ -12,20 +12,20 @@ namespace Core2LayersApp.DAL.Entities
         public int ProductId { get; set; }
 
         [Display(Name = "Product")]
-        [Required(ErrorMessage = "Поле обязательно")]
-        [StringLength(50, ErrorMessage = "Длина не должна превышать 50 символов")]
+        [Required(ErrorMessage = "required")]
+        [StringLength(50, ErrorMessage = "not more than 50 symbols")]
         public string Description { get; set; }
 
         [Display(Name = "Quantity")]
-        [Required(ErrorMessage = "Поле обязательно")]
+        [Required(ErrorMessage = "required")]
         public int  Quantity { get; set; }
 
         [Display(Name = "Price")]
-        [Required(ErrorMessage = "Поле обязательно")]
+        [Required(ErrorMessage = "required")]
         public decimal Price { get; set; }
 
         [Display(Name = "IsAvailable")]
-        [Required(ErrorMessage = "Поле обязательно")]
+        [Required(ErrorMessage = "required")]
         public bool IsAvailable { get; set; }
 
         [Display(Name = "DeliveryDate")]
